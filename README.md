@@ -28,3 +28,28 @@ Este proyecto demuestra cómo convertir elementos gráficos en datos procesables
 5. Guarda un nuevo archivo Excel con la conversión.
 
 ## 📂 Estructura del proyecto
+excel-pixel-rgb-converter/
+│
+├── Pixel_Hulk_v1.xlsx
+├── Pixel_Hulk_v1_RGB.xlsx
+├── script.ipynb
+└── README.md
+---
+
+## 💡 Aplicaciones prácticas
+
+- Digitalización de pixel art  
+- Conversión de datos visuales en datos estructurados  
+- Automatización de archivos Excel  
+- Procesamiento de información gráfica  
+- Proyectos educativos en programación  
+
+---
+
+## 👨🏻‍💻 Autor
+
+**David Cárdenas**  
+Estudiante de Administración de Mercadeo y Logística Internacional  
+Interesado en automatización, tecnología aplicada a negocios y análisis de datos.
+
+
