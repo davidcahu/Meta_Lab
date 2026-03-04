@@ -1,55 +1,56 @@
 # Meta_Lab
 Proyecto en Python que convierte pixel art creado en Excel en una matriz de códigos RGB, extrayendo los colores de cada celda mediante openpyxl.
-# Excel Pixel Art → RGB Converter
+# Extractor de RGB para Pixel Art en Excel
 
-Este proyecto convierte pixel art creado en Excel (usando celdas coloreadas) en una matriz de códigos RGB.
+Este proyecto permite convertir pixel art creado en Excel (usando celdas coloreadas) en una matriz de códigos RGB.
 
-El programa analiza el color de fondo de cada celda y genera una nueva hoja donde cada celda contiene su valor RGB correspondiente en lugar del color visual.
+El script lee el color de fondo de cada celda en un archivo de Excel y reemplaza ese color por su código RGB correspondiente en una nueva hoja. Esto es útil cuando se trabaja con pixel art almacenado como celdas coloreadas en una hoja de cálculo.
 
-## 🎯 Objetivo del proyecto
+## Características
 
-Automatizar la extracción de información visual (colores) y transformarla en datos estructurados utilizables para programación, análisis o desarrollo digital.
+- Lee archivos de Excel que contienen pixel art hecho con celdas coloreadas
+- Extrae los valores RGB de cada celda
+- Escribe los códigos RGB en una nueva hoja
+- Elimina el color original de las celdas
+- Puede ejecutarse en Google Colab o en cualquier entorno de Python
 
-Este proyecto demuestra cómo convertir elementos gráficos en datos procesables mediante Python.
-
-## ⚙️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - Python
 - openpyxl
 - Google Colab
-- Microsoft Excel
 
-## 🔎 ¿Cómo funciona?
+## Cómo funciona
 
-1. Se carga un archivo Excel que contiene pixel art hecho con celdas coloreadas.
-2. El script recorre cada celda de la hoja.
-3. Extrae el código RGB del color de fondo.
-4. Crea una nueva hoja con los valores RGB.
-5. Guarda un nuevo archivo Excel con la conversión.
+1. Se carga el archivo de Excel que contiene el pixel art.
+2. El programa recorre cada celda de la hoja.
+3. Extrae el valor RGB del color de fondo de la celda.
+4. Escribe el código RGB en una nueva hoja.
+5. Guarda un nuevo archivo de Excel con los resultados.
 
-## 📂 Estructura del proyecto
-excel-pixel-rgb-converter/
-│
-├── Pixel_Hulk_v1.xlsx
-├── Pixel_Hulk_v1_RGB.xlsx
-├── script.ipynb
-└── README.md
----
+## Ejemplo
 
-## 💡 Aplicaciones prácticas
+Pixel art original en Excel:
 
-- Digitalización de pixel art  
-- Conversión de datos visuales en datos estructurados  
-- Automatización de archivos Excel  
-- Procesamiento de información gráfica  
-- Proyectos educativos en programación  
+⬛🟩🟩🟩  
+🟩⬛⬛🟩  
+🟩🟩⬛⬛  
 
----
+Resultado generado:
+4CAF50 4CAF50 4CAF50
+4CAF50 000000 000000
+4CAF50 4CAF50 000000
 
-## 👨🏻‍💻 Autor
+## Uso
 
-**David Cárdenas**  
-Estudiante de Administración de Mercadeo y Logística Internacional  
-Interesado en automatización, tecnología aplicada a negocios y análisis de datos.
+1. Coloca tu archivo de Excel en Google Drive o en tu directorio de trabajo.
+2. Ejecuta el script en Google Colab.
+3. Se generará un nuevo archivo de Excel con los códigos RGB.
 
+## Salida
 
+El script genera un nuevo archivo de Excel donde cada celda contiene el código RGB correspondiente en lugar del color original.
+
+## Autor
+
+David Cardenas
